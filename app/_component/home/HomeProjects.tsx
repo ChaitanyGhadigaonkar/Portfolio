@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card";
-import { MERN_STORE, projects } from "@/app/_helpers/projects";
+import { projects } from "@/app/_helpers/projects";
 
 const HomeProjects = () => {
   return (

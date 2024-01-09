@@ -65,7 +65,9 @@ const MobileMenu = () => {
             About
           </Link>
           <Link
-            href={"/resume"}
+            href={
+              "https://drive.google.com/file/d/1BVPPNJh334hAQCBfD6T4vcHgc_oWgfAu/view?usp=sharing"
+            }
             onClick={() => {
               closeSidebar();
             }}

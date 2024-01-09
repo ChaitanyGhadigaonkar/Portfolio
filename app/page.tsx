@@ -4,7 +4,7 @@ import About from "./_component/home/About";
 
 export default function Home() {
   return (
-    <main className="px-1 flex justify-start gap-6 flex-col h-full">
+    <main className="px-1 flex justify-start gap-6 flex-col h-full flex-1">
       <HeroContent />
       <HomeProjects />
       <About />
