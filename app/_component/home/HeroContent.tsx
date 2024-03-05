@@ -19,8 +19,8 @@ const HeroContent = () => {
           I am a computer engineering student with a passion for building
           interactive and engaging web applications. With a strong foundation in
           both front-end and back-end development, I am constantly learning and
-          pushing boundaries to create meaningful digital experiences. Let's
-          discuss your next project!
+          pushing boundaries to create meaningful digital experiences.
+          Let&apos;s discuss your next project!
         </p>
         <div className="buttons flex w-full gap-2 items-center my-2">
           <Button

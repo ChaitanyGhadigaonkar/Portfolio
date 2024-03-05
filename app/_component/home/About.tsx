@@ -19,7 +19,7 @@ const About = () => {
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center ">
         <div className="flex flex-col items-start gap-2 sm:w-1/2 sm:ml-5">
           <p className="text-light text-base">
-            I am a passionate web developer currently pursuing a Bachelor's
+            I am a passionate web developer currently pursuing a Bachelor&apos;s
             degree in Computer Engineering. I am proficient in both front-end
             and back-end development, with a strong command of front-end
             technologies like React, Next.js, JavaScript, CSS, and HTML.
