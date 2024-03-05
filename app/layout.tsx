@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.className} max-w-screen-xl min-h-screen flex flex-col mx-auto px-6 bg-slate-100 relative`}
+        className={`${figtree.className} max-w-screen-xl min-h-hero-content-sm flex flex-col mx-auto px-6 bg-slate-100 relative`}
       >
         <SidebarContextProvider>
           <MobileMenu />

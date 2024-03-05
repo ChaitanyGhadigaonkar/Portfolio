@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,10 +15,34 @@ const Footer = () => {
       </div>
       <footer>
         <div className="socials flex items-center gap-4 my-4">
-          <p className="text-sm text-head font-medium capitalize">GitHub</p>
-          <p className="text-sm text-head font-medium capitalize">Linked In</p>
-          <p className="text-sm text-head font-medium capitalize">Twitter</p>
-          <p className="text-sm text-head font-medium capitalize">LeetCode</p>
+          <Link
+            href={"https://github.com/ChaitanyGhadigaonkar"}
+            className="text-sm text-head font-medium capitalize"
+            target="_blank"
+          >
+            GitHub
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/chaitany-ghadigaonkar"}
+            className="text-sm text-head font-medium capitalize"
+            target="_blank"
+          >
+            Linked In
+          </Link>
+          <Link
+            href={""}
+            className="text-sm text-head font-medium capitalize"
+            target="_blank"
+          >
+            Twitter
+          </Link>
+          <Link
+            href={"https://leetcode.com/chaitanyghadigaonkar28/"}
+            className="text-sm text-head font-medium capitalize"
+            target="_blank"
+          >
+            LeetCode
+          </Link>
         </div>
         <p className="text-sm text-light my-2">
           Made with ❤️ By Chaitany Ghadigaonkar

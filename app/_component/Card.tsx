@@ -1,33 +1,38 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { projects } from "../_helpers/projects";
+import Link from "next/link";
 
 const Card = ({
   image,
   gif,
   title,
   features,
+  gitHubLink,
 }: {
   image: StaticImageData | string;
   gif: StaticImageData | string;
   title: string;
   features: string[];
+  gitHubLink: string;
 }) => {
   return (
-    <div className="flex flex-col gap-2 w-full overflow-hidden">
-      <div className="top">
+    <Link
+      href={gitHubLink}
+      target="_blank"
+      className="flex flex-col gap-2 w-full overflow-hidden sm:my-4"
+    >
+      <div className="top flex items-center justify-center">
         <Image
-          width={600}
-          height={450}
           src={image}
           alt={title}
-          className={`h-40 w-68 aspect-video rounded-2xl`}
+          className={`w-80 h-56 sm:w-full lg:w-10/12 object-contain  rounded-2xl `}
         />
         {/* <Image width={150} height={150} src={""} alt={title}/> 
         TODO:for the gif */}
         {/* TODO: Animation for the image slightly up and down */}
       </div>
-      <div className="content my-4 mx-3">
+      <div className="content my-4 mx-3 sm:mx-10 lg:mx-20">
         <h3 className="text-head font-semibold text-lg">{title}</h3>
         <div className="gap-2">
           {features.map((feature, index) => (
@@ -40,7 +45,7 @@ const Card = ({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

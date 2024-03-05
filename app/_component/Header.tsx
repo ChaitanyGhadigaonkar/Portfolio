@@ -40,7 +40,7 @@ const Header = () => {
         </Link>
         <Link
           href={
-            "https://drive.google.com/file/d/1BVPPNJh334hAQCBfD6T4vcHgc_oWgfAu/view?usp=sharing"
+            "https://drive.google.com/file/d/1OrEWxMZVEIV88Fuk2d0AI3cYpbhkHQEo/view"
           }
           className={`${pathname === "/resume" && "text-accent"} font-medium `}
         >

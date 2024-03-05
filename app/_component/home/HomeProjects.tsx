@@ -4,7 +4,7 @@ import { projects } from "@/app/_helpers/projects";
 
 const HomeProjects = () => {
   return (
-    <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 sm:my-4">
+    <div className="grid grid-cols-1 place-items-center md:grid-cols-2 md:my-4">
       {projects.map((project, index) => (
         <Card
           key={index}
@@ -12,6 +12,7 @@ const HomeProjects = () => {
           title={project.title}
           features={project.features}
           gif={project.image}
+          gitHubLink={project.gitHubLink}
         />
       ))}
     </div>
