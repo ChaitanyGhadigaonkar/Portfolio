@@ -11,10 +11,7 @@ const Header = () => {
   const { openSidebar, sidebarState } = useSidebarContext();
   return (
     <div className="px-1 py-6 flex justify-between items-center">
-      <Link
-        href="/"
-        className="logo text-head text-xl font-semibold"
-      >
+      <Link href="/" className="logo text-head text-xl font-semibold">
         Chaitany Ghadigaonkar
       </Link>
       <nav className="items-center gap-8 hidden sm:flex">
@@ -47,15 +44,8 @@ const Header = () => {
           Resume
         </Link>
       </nav>
-      <Button
-        size={"icon"}
-        className="sm:hidden"
-        onClick={() => openSidebar()}
-      >
-        <FaBars
-          width={30}
-          height={30}
-        />
+      <Button size={"icon"} className="sm:hidden" onClick={() => openSidebar()}>
+        <FaBars width={30} height={30} />
       </Button>
     </div>
   );

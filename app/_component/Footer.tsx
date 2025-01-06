@@ -5,12 +5,13 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="h-40 flex items-center justify-center">
+      <div className="h-[10rem] md:h-[32rem] flex items-center justify-center flex-col gap-3 ">
+        <p className="text-base md:text-lg font-medium">Got a project?</p>
         <Button
           variant={"primary"}
-          className="text-xl font-semibold "
+          className="md:text-6xl text-2xl font-bold px-6 md:px-20 py-4 md:py-10 rounded-md md:rounded-3xl"
         >
-          Connect With Me
+          Let's Work Together
         </Button>
       </div>
       <footer>
