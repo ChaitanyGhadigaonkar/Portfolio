@@ -1,10 +1,10 @@
+import About from "./_component/home/About";
 import HeroContent from "./_component/home/HeroContent";
 import HomeProjects from "./_component/home/HomeProjects";
-import About from "./_component/home/About";
 
 export default function Home() {
   return (
-    <main className="px-1 flex justify-start gap-6 flex-col h-full flex-1">
+    <main className="flex h-full flex-1 flex-col justify-start gap-6 px-1">
       <HeroContent />
       <HomeProjects />
       <About />

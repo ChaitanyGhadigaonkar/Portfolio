@@ -3,11 +3,11 @@ import { IconType } from "react-icons";
 
 const Skill = ({ name, Icon }: { name: string; Icon: IconType | string }) => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-between">
+    <div className="flex flex-col items-center justify-between gap-4">
       {typeof Icon === "string" ? (
         <div dangerouslySetInnerHTML={{ __html: Icon }}></div>
       ) : (
-        <Icon className="w-10 h-10 text-head lg:w-16 lg:h-16" />
+        <Icon className="text-head h-10 w-10 lg:h-16 lg:w-16" />
       )}
       <p className="text-light text-xs lg:text-base">{name}</p>
     </div>

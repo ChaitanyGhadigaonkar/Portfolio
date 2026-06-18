@@ -1,45 +1,33 @@
 "use client";
-import { FaBars } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import Button from "./ui/Button";
+import { FaBars } from "react-icons/fa6";
+
 import { useSidebarContext } from "../context/SidebarContext";
+import Button from "./ui/Button";
 
 const Header = () => {
   const pathname = usePathname();
-  const { openSidebar, sidebarState } = useSidebarContext();
+  const { openSidebar } = useSidebarContext();
   return (
-    <div className="px-1 py-6 flex justify-between items-center">
+    <div className="flex items-center justify-between px-1 py-6">
       <Link href="/" className="logo text-head text-xl font-semibold">
         Chaitany Ghadigaonkar
       </Link>
-      <nav className="items-center gap-8 hidden sm:flex">
-        <Link
-          href={"/"}
-          className={`${pathname === "/" && "text-accent"} font-medium `}
-        >
+      <nav className="hidden items-center gap-8 sm:flex">
+        <Link href={"/"} className={`${pathname === "/" && "text-accent"} font-medium`}>
           Home
         </Link>
-        <Link
-          href={"/projects"}
-          className={`${
-            pathname === "/projects" && "text-accent"
-          } font-medium `}
-        >
+        <Link href={"/projects"} className={`${pathname === "/projects" && "text-accent"} font-medium`}>
           Projects
         </Link>
-        <Link
-          href={"/about"}
-          className={`${pathname === "/about" && "text-accent"} font-medium `}
-        >
+        <Link href={"/about"} className={`${pathname === "/about" && "text-accent"} font-medium`}>
           About
         </Link>
         <Link
-          href={
-            "https://drive.google.com/file/d/1OrEWxMZVEIV88Fuk2d0AI3cYpbhkHQEo/view"
-          }
-          className={`${pathname === "/resume" && "text-accent"} font-medium `}
+          href={"https://drive.google.com/file/d/1OrEWxMZVEIV88Fuk2d0AI3cYpbhkHQEo/view"}
+          className={`${pathname === "/resume" && "text-accent"} font-medium`}
         >
           Resume
         </Link>

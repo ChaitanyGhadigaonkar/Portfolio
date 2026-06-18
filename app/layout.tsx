@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
-import "./globals.css";
-import Header from "./_component/Header";
+
 import Footer from "./_component/Footer";
+import Header from "./_component/Header";
 import MobileMenu from "./_component/MobileMenu";
 import { SidebarContextProvider } from "./context/SidebarContext";
+import "./globals.css";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -13,15 +14,11 @@ export const metadata: Metadata = {
   description: "Chaitany Ghadigaonkar",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${figtree.className} max-w-screen-xl min-h-hero-content-sm flex flex-col mx-auto px-6 bg-slate-100 relative`}
+        className={`${figtree.className} min-h-hero-content-sm relative mx-auto flex max-w-(--breakpoint-xl) flex-col bg-slate-100 px-6`}
       >
         <SidebarContextProvider>
           <MobileMenu />

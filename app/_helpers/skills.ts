@@ -1,14 +1,5 @@
-import {
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaNpm,
-  FaDatabase,
-  FaJava,
-  FaCss3Alt,
-} from "react-icons/fa6";
 import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
+import { FaCss3Alt, FaDatabase, FaHtml5, FaJava, FaJs, FaNodeJs, FaNpm, FaReact } from "react-icons/fa6";
 import { SiPrisma } from "react-icons/si";
 
 export const skills = [
