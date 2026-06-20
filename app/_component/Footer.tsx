@@ -1,53 +1,48 @@
-import React from "react";
-import Button from "./ui/Button";
 import Link from "next/link";
+import React from "react";
+
+import Button from "./ui/Button";
 
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="h-[10rem] md:h-[32rem] flex items-center justify-center flex-col gap-3 ">
-        <p className="text-base md:text-lg font-medium">Got a project?</p>
+      <div className="flex h-40 flex-col items-center justify-center gap-3 md:h-128">
+        <p className="text-base font-medium md:text-lg">Got a project?</p>
         <Button
           variant={"primary"}
-          className="md:text-6xl text-2xl font-bold px-6 md:px-20 py-4 md:py-10 rounded-md md:rounded-3xl"
+          className="rounded-md px-6 py-4 text-2xl font-bold md:rounded-3xl md:px-20 md:py-10 md:text-6xl"
         >
-          Let's Work Together
+          Let&apos;s Work Together
         </Button>
       </div>
       <footer>
-        <div className="socials flex items-center gap-4 my-4">
+        <div className="socials my-4 flex items-center gap-4">
           <Link
             href={"https://github.com/ChaitanyGhadigaonkar"}
-            className="text-sm text-head font-medium capitalize"
+            className="text-head text-sm font-medium capitalize"
             target="_blank"
           >
             GitHub
           </Link>
           <Link
             href={"https://www.linkedin.com/in/chaitany-ghadigaonkar"}
-            className="text-sm text-head font-medium capitalize"
+            className="text-head text-sm font-medium capitalize"
             target="_blank"
           >
             Linked In
           </Link>
-          <Link
-            href={""}
-            className="text-sm text-head font-medium capitalize"
-            target="_blank"
-          >
+          <Link href={""} className="text-head text-sm font-medium capitalize" target="_blank">
             Twitter
           </Link>
           <Link
             href={"https://leetcode.com/chaitanyghadigaonkar28/"}
-            className="text-sm text-head font-medium capitalize"
+            className="text-head text-sm font-medium capitalize"
             target="_blank"
           >
             LeetCode
           </Link>
         </div>
-        <p className="text-sm text-light my-2">
-          Made with ❤️ By Chaitany Ghadigaonkar
-        </p>
+        <p className="text-light my-2 text-sm">Made with ❤️ By Chaitany Ghadigaonkar</p>
       </footer>
     </div>
   );

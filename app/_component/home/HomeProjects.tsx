@@ -1,10 +1,12 @@
 import React from "react";
-import Card from "../Card";
+
 import { projects } from "@/app/_helpers/projects";
+
+import Card from "../Card";
 
 const HomeProjects = () => {
   return (
-    <div className="grid grid-cols-1 place-items-center md:grid-cols-2 md:my-4">
+    <div className="grid grid-cols-1 place-items-center md:my-4 md:grid-cols-2">
       {projects.map((project, index) => (
         <Card
           key={index}

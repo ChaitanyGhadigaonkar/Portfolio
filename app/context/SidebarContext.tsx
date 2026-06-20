@@ -7,9 +7,7 @@ interface SidebarContextProps {
   openSidebar: () => void;
 }
 
-const SidebarContext = createContext<SidebarContextProps | undefined>(
-  undefined
-);
+const SidebarContext = createContext<SidebarContextProps | undefined>(undefined);
 
 export const useSidebarContext = () => {
   const context = useContext(SidebarContext);
@@ -19,11 +17,7 @@ export const useSidebarContext = () => {
   return context;
 };
 
-export const SidebarContextProvider = ({
-  children,
-}: {
-  children: ReactNode;
-}) => {
+export const SidebarContextProvider = ({ children }: { children: ReactNode }) => {
   const [sidebarState, setSidebarState] = useState<boolean>(false);
 
   const openSidebar = () => {
@@ -39,9 +33,5 @@ export const SidebarContextProvider = ({
     openSidebar,
   };
 
-  return (
-    <SidebarContext.Provider value={contextValue}>
-      {children}
-    </SidebarContext.Provider>
-  );
+  return <SidebarContext.Provider value={contextValue}>{children}</SidebarContext.Provider>;
 };
