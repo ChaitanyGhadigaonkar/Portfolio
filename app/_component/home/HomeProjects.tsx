@@ -6,10 +6,10 @@ import Card from "../Card";
 
 const HomeProjects = () => {
   return (
-    <div className="grid grid-cols-1 place-items-center md:my-4 md:grid-cols-2">
-      {projects.map((project, index) => (
+    <div className="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-2 md:gap-y-10">
+      {projects.map((project) => (
         <Card
-          key={index}
+          key={project.title}
           image={project.image}
           title={project.title}
           features={project.features}

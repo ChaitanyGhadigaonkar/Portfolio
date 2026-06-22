@@ -5,7 +5,7 @@ import Photo from "./Photo";
 
 const HeroContent = () => {
   return (
-    <div className="flex h-120 flex-col gap-8 sm:flex-row-reverse sm:items-center md:gap-3">
+    <div className="flex min-h-120 flex-col gap-8 sm:flex-row-reverse sm:items-center md:gap-3">
       <div className="relative flex items-center md:flex-1 md:justify-center">
         <Photo className="mt-8" />
       </div>
