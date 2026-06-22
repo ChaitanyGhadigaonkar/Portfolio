@@ -17,9 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${figtree.className} min-h-hero-content-sm relative mx-auto flex max-w-(--breakpoint-xl) flex-col bg-slate-100 px-6`}
-      >
+      <body className={`${figtree.className} relative mx-auto flex max-w-(--breakpoint-xl) flex-col bg-slate-100 px-6`}>
         <SidebarContextProvider>
           <MobileMenu />
           <Header />

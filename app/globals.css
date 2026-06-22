@@ -12,9 +12,6 @@
   --color-accent: rgb(3, 112, 221);
   --color-head: #04263e;
   --color-light: #575757;
-
-  --spacing-hero-content-sm: calc(100vh - 25px);
-  --spacing-hero-content-md: calc(80vh);
 }
 
 /*
