@@ -11,7 +11,7 @@ const Header = () => {
   const pathname = usePathname();
   const { openSidebar } = useSidebarContext();
   return (
-    <div className="flex items-center justify-between px-1 py-6">
+    <div className="flex items-center justify-between py-6 md:py-10">
       <Link href="/" className="logo text-head text-xl font-semibold">
         Chaitany Ghadigaonkar
       </Link>

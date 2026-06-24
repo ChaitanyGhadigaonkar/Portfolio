@@ -19,7 +19,7 @@ const MobileMenu = () => {
           sidebarState ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <header className="item-center flex w-full justify-between px-3 py-4">
+        <header className="item-center flex w-full justify-between px-6 py-6 md:py-10">
           <Link
             href={"/"}
             onClick={() => {
@@ -31,7 +31,7 @@ const MobileMenu = () => {
           </Link>
           <FaX className="text-head my-1 text-xl" onClick={() => closeSidebar()} />
         </header>
-        <nav className="flex flex-col items-start gap-6 px-5 py-4">
+        <nav className="flex flex-col items-start gap-6 px-6 py-4">
           <Link
             href={"/"}
             onClick={() => {

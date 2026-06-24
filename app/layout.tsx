@@ -10,8 +10,32 @@ import "./globals.css";
 const figtree = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chaitany Ghadigaonkar",
-  description: "Chaitany Ghadigaonkar",
+  title: { default: "Chaitany Ghadigaonkar | Software Engineer", template: "%s | Chaitany Ghadigaonkar" },
+  description:
+    "Portfolio of Chaitany Ghadigaonkar — Software Engineer specializing in React, Next.js, Node.js, and scalable web applications.",
+  keywords: [
+    "Chaitany Ghadigaonkar",
+    "Software Engineer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Web Developer Portfolio",
+  ],
+  authors: [{ name: "Chaitany Ghadigaonkar" }],
+  creator: "Chaitany Ghadigaonkar",
+  publisher: "Chaitany Ghadigaonkar",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -5,18 +5,15 @@ import Button from "./ui/Button";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex h-40 flex-col items-center justify-center gap-3 md:h-128">
+    <div className="flex min-h-120 flex-col items-center">
+      <div className="flex h-40 flex-1 flex-col items-center justify-center gap-6">
         <p className="text-base font-medium md:text-lg">Got a project?</p>
-        <Button
-          variant={"primary"}
-          className="rounded-md px-6 py-4 text-2xl font-bold md:rounded-3xl md:px-20 md:py-10 md:text-6xl"
-        >
+        <Button variant={"primary"} className="rounded-2xl px-6 py-4 text-2xl font-bold md:px-20 md:py-10 md:text-6xl">
           Let&apos;s Work Together
         </Button>
       </div>
-      <footer>
-        <div className="socials my-4 flex items-center gap-4">
+      <footer className="my-4 flex flex-col gap-2">
+        <div className="socials flex items-center gap-2">
           <Link
             href={"https://github.com/ChaitanyGhadigaonkar"}
             className="text-head text-sm font-medium capitalize"
